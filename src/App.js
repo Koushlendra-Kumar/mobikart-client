@@ -31,7 +31,7 @@ function App() {
     };
     console.log(makeQueryString());
     axios
-      .get(`http://127.0.0.1:5000/products?${makeQueryString()}`)
+      .get(`https://mobikart-webdevkoushal.up.railway.app/products?${makeQueryString()}`)
       .then((res) => setProducts(res.data))
       .catch((err) => console.log(err));
   }, [filters]);
